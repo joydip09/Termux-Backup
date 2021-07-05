@@ -1,3 +1,5 @@
+#!bin/bash
+
 echo "For this proccess keep your 'termux-backup.tar.gz' file in main internal storage otherwise it won't work" | lolcat -as 5
 apt update -y
 apt upgrade -y

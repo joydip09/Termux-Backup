@@ -1,3 +1,5 @@
+#!bin/bash
+
 termux-setup-storage
 cd /data/data/com.termux/files
 tar -zcf /sdcard/termux-backup.tar.gz home usr

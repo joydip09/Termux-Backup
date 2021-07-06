@@ -1,7 +1,10 @@
 #!bin/bash
 
-apt install ruby
+apt update -y
+apt upgrade -y
+apt install ruby -y
 gem install lolcat
+echo "Press Allow in next pop-up" | lolcat -as 10
 termux-setup-storage
 
 if [ -a /sdcard/termux-backup.tar.gz ];

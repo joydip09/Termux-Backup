@@ -1,6 +1,6 @@
 #!bin/bash
 
-echo "Installing Requirements" | lolcat -as 10
+echo "Installing Requirements..."
 apt update -y
 apt upgrade -y
 apt install ruby -y

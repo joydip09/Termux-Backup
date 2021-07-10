@@ -12,8 +12,8 @@ if [ -a /sdcard/termux-backup.tar.gz ];
 then
 	echo "backup exists"
 else
-	echo "There is no backup in your device. Do u wanna make one?(y/n): "
-	read cnfrm
+	read -p "There is no backup in your device. Do u wanna make one?(y/n): " cnfrm
+	
 fi
 
 case "$cnfrm" in

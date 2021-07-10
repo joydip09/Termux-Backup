@@ -11,8 +11,7 @@ echo "For this proccess keep your 'termux-backup.tar.gz' file in main internal s
 
 if [ -a /sdcard/termux-backup.tar.gz ];
 then
-	echo "There is a backup in your device. Do u wanna restore?(y/n): " | lolcat -as 10
-	read cnfrm1
+	read -p "There is a backup in your device. Do u wanna restore?(y/n): " cnfrm1 | lolcat -as 10
 else
 	echo "There is no backup in your device."
 fi

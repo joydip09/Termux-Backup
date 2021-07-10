@@ -1,5 +1,6 @@
 #!bin/bash
 
+echo "Installing Requirements..."
 apt update -y
 apt upgrade -y
 apt install ruby -y
@@ -11,7 +12,7 @@ echo "For this proccess keep your 'termux-backup.tar.gz' file in main internal s
 
 if [ -a /sdcard/termux-backup.tar.gz ];
 then
-	read -p "There is a backup in your device. Do u wanna restore?(y/n): " cnfrm1 | lolcat -as 10
+	read -p "There is a backup in your device. Do u wanna restore?(y/n): " cnfrm1
 else
 	echo "There is no backup in your device."
 fi
